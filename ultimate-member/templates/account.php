@@ -67,39 +67,39 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<div class="um-account-side uimob340-hide uimob500-hide">
 
-				<!-- <div class="um-account-meta radius-<?php // echo esc_attr( UM()->options()->get( 'profile_photocorner' ) ); ?>">
+				<!-- <div class="um-account-meta radius-<?php echo esc_attr( UM()->options()->get( 'profile_photocorner' ) ); ?>">
 
 					<div class="um-account-meta-img uimob800-hide">
-						<a href="<?php // echo esc_url( um_user_profile_url() ); ?>">
-							<?php // echo get_avatar( um_user( 'ID' ), 120 ); ?>
+						<a href="<?php echo esc_url( um_user_profile_url() ); ?>">
+							<?php echo get_avatar( um_user( 'ID' ), 120 ); ?>
 						</a>
 					</div>
 
-					<?php // if ( UM()->mobile()->isMobile() ) { ?>
+					<?php if ( UM()->mobile()->isMobile() ) { ?>
 
-						<div class="um-account-meta-img-b uimob800-show" title="<?php // echo esc_attr( um_user( 'display_name' ) ); ?>">
-							<a href="<?php // echo esc_url( um_user_profile_url() ); ?>">
-								<?php // echo get_avatar( um_user( 'ID' ), 120 ); ?>
+						<div class="um-account-meta-img-b uimob800-show" title="<?php echo esc_attr( um_user( 'display_name' ) ); ?>">
+							<a href="<?php echo esc_url( um_user_profile_url() ); ?>">
+								<?php echo get_avatar( um_user( 'ID' ), 120 ); ?>
 							</a>
 						</div>
 
 					<?php } else { ?>
 
 						<div class="um-account-meta-img-b uimob800-show um-tip-<?php echo is_rtl() ? 'e' : 'w'; ?>" title="<?php echo esc_attr( um_user( 'display_name' ) ); ?>">
-							<a href="<?php // echo esc_url( um_user_profile_url() ); ?>">
-								<?php // echo get_avatar( um_user( 'ID' ), 120 ); ?>
+							<a href="<?php echo esc_url( um_user_profile_url() ); ?>">
+								<?php echo get_avatar( um_user( 'ID' ), 120 ); ?>
 							</a>
 						</div>
 
 					<?php } ?>
 
 					<div class="um-account-name uimob800-hide">
-						<a href="<?php // echo esc_url( um_user_profile_url() ); ?>">
-							<?php // echo um_user( 'display_name', 'html' ); ?>
+						<a href="<?php echo esc_url( um_user_profile_url() ); ?>">
+							<?php echo um_user( 'display_name', 'html' ); ?>
 						</a>
 						<div class="um-account-profile-link">
-							<a href="<?php // echo esc_url( um_user_profile_url() ); ?>" class="um-link">
-								<?php // esc_html_e( 'View profile', 'ultimate-member' ); ?>
+							<a href="<?php echo esc_url( um_user_profile_url() ); ?>" class="um-link">
+								<?php esc_html_e( 'View profile', 'ultimate-member' ); ?>
 							</a>
 						</div>
 					</div>
@@ -107,6 +107,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div> -->
 
 				<ul>
+					<!-- logo -->
+					<li>
+						<a href="<?php echo esc_url( home_url() ); ?>" class="um-account-logo">
+						  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kaufdash-logo.png" alt="logo" class="">
+						</a>
 					<?php
 					foreach ( UM()->account()->tabs as $id => $info ) {
 						$tab_enabled = UM()->options()->get( 'account_tab_' . $id );
@@ -161,7 +166,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						</div>
 
 						<div class="um-account-tab um-account-tab-<?php echo esc_attr( $id ); ?>" data-tab="<?php echo esc_attr( $id  )?>">
-							<?php $info['with_header'] = true;
+							<?php $info['with_header'] = false;
 							UM()->account()->render_account_tab( $id, $info, $args ); ?>
 						</div>
 						<?php
