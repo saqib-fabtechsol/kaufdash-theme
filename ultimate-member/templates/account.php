@@ -105,13 +105,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 
 				</div> -->
-
+				<div class="logo-wrp">
+					<a href="<?php echo esc_url( home_url() ); ?>" class="um-account-logo">
+						  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kaufdash.png" alt="logo" class="">
+					</a>
+				</div>
 				<ul>
+
 					<!-- logo -->
-					<li>
-						<a href="<?php echo esc_url( home_url() ); ?>" class="um-account-logo">
-						  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kaufdash-logo.png" alt="logo" class="">
-						</a>
+				
+						
 					<?php
 					foreach ( UM()->account()->tabs as $id => $info ) {
 						$tab_enabled = UM()->options()->get( 'account_tab_' . $id );
