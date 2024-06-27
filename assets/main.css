@@ -54,6 +54,18 @@
 
 }
 
+.icons-add {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-bottom: 20px;
+    margin-top: -70px;
+}
+
+.icons-add img{
+    display: block;
+}
+
 .dashboard-cards .card h5{
     margin: 0px;
 }
@@ -108,6 +120,7 @@
 
 .profit-calculator .field-group label{
     width: 50%;
+    font-weight: 500;
 }
 
 .profit-img{
@@ -126,6 +139,8 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    gap:15px;
+    
 }
 
 .pd-main .search-and-filters .search-form{
@@ -213,10 +228,18 @@ font-size: 16px;
     border-bottom-right-radius: 8px;
 }
 
-.pd-main .product-database-table tr {
-    border: 1px solid #000; /* Change as needed */
-    border-radius: 8px;
+.product-database-table .product-row td{
+    background-color: #fff !important;
+    vertical-align: middle !important;
 }
+
+.product-database-table table{
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+
+}
+
+
 
 .pr-products-wrapper.product-database-table th,
     .pr-products-wrapper td{
@@ -224,6 +247,211 @@ font-size: 16px;
     text-align: start;
     font-style: normal;
 }
+
+.product-tracker-main .search-form button{
+    position: relative !important;
+    background-color:#B54834;
+    color: #fff;
+    height: 42px;
+    margin-bottom: 2px;
+    font-style: normal !important;
+}
+
+.um-account-tab-orderlist form{
+    display: flex;;
+}
+
+html body .product-tracker-main .pd-main .search-form button:hover{
+      background-color:#B54834 !important;
+    color: #fff;
+}
+
+.product-tracker-main .search-form form{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+
+
+.tabs-section {
+    width: 100%;
+}
+
+.tabs-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs-menu .tab-link {
+    padding: 10px 15px;
+    border: 2px solid #ffffff;
+    border-bottom: none;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.tabs-menu .tab-link.current {
+    background-color: #fff;
+    border-bottom: 2px solid #A52008;
+    color: #A52008;
+}
+
+.profile-image{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-image > div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-image button{
+    border: none !important;
+}
+
+.profile-image button:hover{
+    background-color: transparent;
+}
+
+
+.profile-image button{
+    position: absolute;
+    right: 0px;
+    top: 57px;
+    display: block;
+    border-radius: 50%;
+    padding: 0px;
+
+    object-fit: contain;
+}
+
+.profile-image img{
+    border-radius: 50%;
+}
+
+.tab-content {
+    display: none;
+    padding: 25px 20px;
+  
+    border-top: none;
+}
+
+.tab-content.current {
+    display: block;
+}
+
+.api-settings form {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.um-account-tab-general > div{
+    display: none;
+}
+
+.um-account-tab-general div.tabs-main{
+    display: flex !important;
+}
+
+.api-settings form .form-group{
+    width: calc(50% - 10px);
+}
+
+.api-settings form input[type="submit"]{
+    background: #A52008;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: auto;
+    padding: 8px 34px;
+    font-size: 18px;
+}
+
+.profile-edit {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-image {
+   margin-right: 15px;
+    text-align: start;
+}
+
+.profile-form {
+    flex: 2;
+}
+
+.profile-form input[type="submit"]{
+    background: #A52008;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: auto;
+    padding: 8px 34px;
+    font-size: 18px;
+}
+
+.profile-form .form-group input,
+.api-settings form input{
+    border-radius: 24px !important;
+    border-color: #DFEAF2 !important;
+    
+}
+
+.profile-form .form-group label,
+.api-settings form label{
+    margin-bottom: 8px;
+    color: 
+#232323;
+    font-size: 16px;
+    
+}
+
+.profile-form form {
+    display: grid;
+    gap: 10px;
+}
+
+
+.tabs-main {
+    display: flex !important;
+    justify-content: space-between;
+    gap:30px;
+    align-items: start;
+}
+.tabs-main .tabs-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 10px;
+
+}
+
+.profile-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.profile-form .form-group{
+    width: calc(50% - 10px);
+}
+
+.account-img{
+    display: block;
+    align-self: flex-end;
+    width:27%;
+
+}
+
+
+
+
 
 
 

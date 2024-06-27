@@ -67,5 +67,17 @@
         
         });
 
+        $(document).ready(function(){
+            $('.tabs-menu .tab-link').click(function(){
+                var tab_id = $(this).attr('data-tab');
+        
+                $('.tabs-menu .tab-link').removeClass('current');
+                $('.tab-content').removeClass('current');
+        
+                $(this).addClass('current');
+                $("#"+tab_id).addClass('current');
+            });
+        });
+
     //and rest of code here
 })(jQuery);
