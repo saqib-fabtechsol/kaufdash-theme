@@ -20,6 +20,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="um <?php echo esc_attr( $this->get_class( $mode ) ); ?> um-<?php echo esc_attr( $form_id ); ?>">
 
 	<div class="um-form">
+		<div class="um-header-account">
+			<div class="logo-wrp">
+				<a href="<?php echo esc_url( home_url() ); ?>" class="um-account-logo">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.png" alt="logo" class="">
+				</a>
+			</div>
+
+		</div>
 
 		<form method="post" action="">
 
@@ -105,11 +113,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</div>
 
 				</div> -->
-				<div class="logo-wrp">
-					<a href="<?php echo esc_url( home_url() ); ?>" class="um-account-logo">
-						  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/kaufdash.png" alt="logo" class="">
-					</a>
-				</div>
+				
 				<ul>
 
 					<!-- logo -->

@@ -2,12 +2,14 @@
     display: flex;
     column-gap: 20px;
     align-items: start;
+    justify-content: space-between;
 }
 
  .dashboard-cards .card .card-revenue{
-   font-weight: 500 !important;
+    font-weight: 600 !important;
     font-size: 20px;
-    color:#202224;
+    color: #202224;
+    font-family: 'Nunito Sans';
    
 }
 
@@ -17,10 +19,17 @@
     margin-top: 30px;
 }
 
+.card:nth-child(3) .card-icon,
+.card:nth-child(4) .card-icon{
+    background: #B5E4D2 !important;
+}
+
  .dashboard-cards .card .card-price{
-    font-size: 30px;
+    font-size: 37px;
      font-weight: 700;
      margin-top: 15px;
+        color: #202224;
+        font-family: 'Nunito Sans';
 }
 
 .dashboard-cards {
@@ -39,7 +48,7 @@
 
 .dashboard-charts canvas{
   height: 360px !important;
-  width: 500px !important;
+  width: 540px !important;
   background-color: #fff;
   border-radius: 8px;
 }
@@ -77,12 +86,12 @@
     align-items: center;
     padding: 10px;
     border-radius: 50%;
-    background-color: #a51f0893;
+    background-color: #ECD0CB;
 
 }
 
 .card-icon.green{
-    background-color: #08A569;
+    background-color: #B5E4D2;
 
 }
 
@@ -130,7 +139,7 @@
 }
 
 .pd-main{
-    padding: 35px 20px;
+    padding: 25px 20px;
     border-radius: 12px;
     background-color: #fff;
 }
@@ -138,7 +147,7 @@
 .pd-main .search-and-filters{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     gap:15px;
     
 }
@@ -268,7 +277,7 @@ html body .product-tracker-main .pd-main .search-form button:hover{
 
 .product-tracker-main .search-form form{
     display: flex;
-    gap:40px;
+    gap:15px;
     align-items: center;
 }
 
@@ -351,12 +360,13 @@ html body .product-tracker-main .pd-main .search-form button:hover{
     flex-wrap: wrap;
 }
 
-.um-account-tab-general > div{
+.um-account-tab-general > div:not(.tabs-main){
     display: none;
 }
 
 .um-account-tab-general div.tabs-main{
     display: flex !important;
+    margin-top: 30px;
 }
 
 .api-settings form .form-group{
@@ -411,9 +421,18 @@ html body .product-tracker-main .pd-main .search-form button:hover{
     
 }
 
+.tabs-menu .tab-link:first-child{
+    display: none !important;
+}
+
+#tab-1{
+    display: none;
+}
+
 .profile-form form {
     display: grid;
     gap: 10px;
+    width: 100%;
 }
 
 
@@ -428,7 +447,7 @@ html body .product-tracker-main .pd-main .search-form button:hover{
     padding-bottom: 30px;
     background-color: #fff;
     border-radius: 12px;
-    margin: 10px;
+    
 
 }
 
